@@ -3,11 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guangzhou Cable Co., Ltd. - Power Cable Manufacturer</title>
+    <title>Guangzhou Cable Co., Ltd. - Power Cable Manufacturer & Exporter Since 1956</title>
+    <meta name="description" content="Guangzhou Cable Co., Ltd. (TWINRHOMBI) — professional power cable manufacturer since 1956. Low/medium-voltage power cables, ABC, control cables, building wires. ISO certified, exporting to 30+ countries.">
+    <meta name="keywords" content="power cable, cable manufacturer, XLPE cable, aerial bundled cable, control cable, building wire, Guangzhou Cable, TWINRHOMBI">
+    <link rel="canonical" href="https://cantoncable.com/">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Guangzhou Cable Co., Ltd. - Power Cable Manufacturer">
+    <meta property="og:description" content="Professional power cable manufacturer & global exporter since 1956. ISO certified. Fortune Global 500 parent company.">
+    <meta property="og:url" content="https://cantoncable.com/">
+    <!-- Organization structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Guangzhou Cable Co., Ltd.",
+        "url": "https://cantoncable.com/",
+        "brand": "TWINRHOMBI",
+        "foundingDate": "1956",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "No. 51, LanZhang Road, Lanhe Town, Nansha District",
+            "addressLocality": "Guangzhou",
+            "addressRegion": "Guangdong",
+            "addressCountry": "CN"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "sales",
+            "telephone": "+86-158-0000-3631",
+            "email": "wangsy@gzdlc.com.cn"
+        }
+    }
+    </script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
         body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: #1a1a1a; line-height: 1.6; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        section { scroll-margin-top: 76px; }
+
+        /* Navigation */
+        .nav { position: sticky; top: 0; z-index: 100; background: rgba(15, 23, 42, 0.97); backdrop-filter: blur(8px); box-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+        .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+        .brand { color: white; text-decoration: none; font-weight: 800; font-size: 1.125rem; letter-spacing: 0.5px; display: flex; align-items: center; gap: 10px; }
+        .brand span { color: #f59e0b; }
+        .brand img { height: 32px; width: 32px; }
+        .nav-links { display: flex; align-items: center; gap: 28px; }
+        .nav-links a { color: #cbd5e1; text-decoration: none; font-size: 0.9375rem; font-weight: 600; transition: color 0.2s; }
+        .nav-links a:hover, .nav-links a.active { color: #f59e0b; }
+        .nav-cta { background: #f59e0b; color: #0f172a !important; padding: 8px 20px; border-radius: 8px; }
+        .nav-cta:hover { background: #fbbf24; }
+        .menu-toggle { display: none; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; }
 
         /* Hero */
         .hero { background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%); color: white; padding: 80px 24px; text-align: center; position: relative; overflow: hidden; }
@@ -16,7 +64,9 @@
         .hero-badges { display: flex; justify-content: center; gap: 32px; margin-top: 32px; flex-wrap: wrap; font-size: 0.875rem; color: #94a3b8; }
         .btn { display: inline-block; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 700; margin: 0 8px; transition: all 0.3s; }
         .btn-primary { background: #f59e0b; color: #0f172a; }
+        .btn-primary:hover { background: #fbbf24; }
         .btn-secondary { background: transparent; color: white; border: 2px solid rgba(255,255,255,0.3); }
+        .btn-secondary:hover { border-color: white; }
 
         /* Sections */
         section { padding: 64px 0; }
@@ -45,6 +95,14 @@
         .feature { padding: 20px; }
         .feature-icon { font-size: 2.5rem; margin-bottom: 12px; }
 
+        /* Certifications strip (homepage entry) */
+        .cert-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-bottom: 32px; }
+        .cert-mini { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; display: flex; align-items: center; gap: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); transition: box-shadow 0.3s, transform 0.3s; }
+        .cert-mini:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.1); transform: translateY(-2px); }
+        .cert-mini .badge { flex-shrink: 0; width: 52px; height: 52px; border-radius: 50%; background: #0f172a; color: #f59e0b; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.6875rem; text-align: center; line-height: 1.2; padding: 6px; }
+        .cert-mini h3 { font-size: 1rem; font-weight: 700; margin-bottom: 2px; }
+        .cert-mini p { font-size: 0.8125rem; color: #64748b; margin: 0; }
+
         /* Contact */
         .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
         .contact-card { background: #0f172a; color: white; padding: 40px; border-radius: 16px; }
@@ -52,25 +110,47 @@
         .contact-item { margin-bottom: 20px; }
         .contact-item .label { font-size: 0.875rem; color: #94a3b8; margin-bottom: 4px; }
         .contact-item .value { font-size: 1.125rem; font-weight: 600; }
+        .contact-item .value a { color: white; text-decoration: none; }
+        .contact-item .value a:hover { color: #f59e0b; }
         .address-card { background: #f8fafc; padding: 40px; border-radius: 16px; border: 1px solid #e2e8f0; }
 
         /* Footer */
         footer { text-align: center; padding: 32px; color: #94a3b8; font-size: 0.875rem; border-top: 1px solid #e2e8f0; }
+        footer .footer-links { margin-bottom: 12px; }
+        footer .footer-links a { color: #64748b; text-decoration: none; margin: 0 12px; }
+        footer .footer-links a:hover { color: #f59e0b; }
 
         /* Responsive */
         @media (max-width: 768px) {
             .hero h1 { font-size: 2rem; }
             .about-grid, .contact-grid { grid-template-columns: 1fr; }
             .products-grid { grid-template-columns: 1fr; }
+            .menu-toggle { display: block; }
+            .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: #0f172a; flex-direction: column; align-items: flex-start; padding: 16px 24px; gap: 16px; }
+            .nav-links.open { display: flex; }
         }
     </style>
 </head>
 <body>
 
+    <nav class="nav">
+        <div class="container nav-inner">
+            <a href="index.html" class="brand"><img src="favicon.svg" alt="logo">GUANGZHOU<span>&nbsp;CABLE</span></a>
+            <button class="menu-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">☰</button>
+            <div class="nav-links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#products">Products</a>
+                <a href="#why-us">Why Us</a>
+                <a href="certificates.html">Certificates</a>
+                <a href="#contact" class="nav-cta">Get a Quote</a>
+            </div>
+        </div>
+    </nav>
+
     <section class="hero">
         <div class="container">
             <h1>GUANGZHOU CABLE CO., LTD.</h1>
-            <p>Professional Power Cable Manufacturer & Global Exporter Since 1956</p>
+            <p>Professional Power Cable Manufacturer &amp; Global Exporter Since 1956</p>
             <a href="#contact" class="btn btn-primary">Get a Quote</a>
             <a href="#products" class="btn btn-secondary">View Products</a>
             <div class="hero-badges">
@@ -87,7 +167,7 @@
             <div class="about-grid">
                 <div class="about-text">
                     <p style="margin-bottom: 16px;">Established in <strong>1956</strong>, Guangzhou Cable Co., Ltd. is a wholly-owned enterprise under the Guangzhou State-owned Assets Supervision and Administration Commission (SASAC). Located in Nansha District at the heart of the Guangdong-Hong Kong-Macao Greater Bay Area.</p>
-                    <p style="margin-bottom: 16px;">As a subsidiary of <strong>Guangzhou Industrial Investment Holdings Group (GIIHG)</strong> — a Fortune Global 500 enterprise — we specialize in the R&D, production, and sales of the <strong>"TWINRHOMBI"</strong> brand electric wires and cables.</p>
+                    <p style="margin-bottom: 16px;">As a subsidiary of <strong>Guangzhou Industrial Investment Holdings Group (GIIHG)</strong> — a Fortune Global 500 enterprise — we specialize in the R&amp;D, production, and sales of the <strong>"TWINRHOMBI"</strong> brand electric wires and cables.</p>
                     <p>Ranked among the <strong>Top 30</strong> most competitive enterprises in China's cable industry, we provide comprehensive one-stop power transmission and distribution solutions.</p>
                 </div>
                 <div class="stats-grid">
@@ -119,19 +199,19 @@
                 <div class="product-card">
                     <div class="product-icon" style="background: #dcfce7;">🌐</div>
                     <h3>Aerial Bundled Cables (ABC)</h3>
-                    <p>Overhead conductors & bundled aerial cables for distribution</p>
+                    <p>Overhead conductors &amp; bundled aerial cables for distribution</p>
                     <span class="tag">IEC 61089 / BS 7870</span>
                 </div>
                 <div class="product-card">
                     <div class="product-icon" style="background: #fce7f3;">🎛️</div>
-                    <h3>Control & Instrumentation</h3>
+                    <h3>Control &amp; Instrumentation</h3>
                     <p>Multi-core control cables, screened pairs, instrumentation</p>
                     <span class="tag">IEC 60502-1 / BS 6346</span>
                 </div>
                 <div class="product-card">
                     <div class="product-icon" style="background: #e0e7ff;">🏠</div>
                     <h3>Building Wires</h3>
-                    <p>BV, RV, THHN, MC cable — residential & commercial wiring</p>
+                    <p>BV, RV, THHN, MC cable — residential &amp; commercial wiring</p>
                     <span class="tag">GB/T 5023 / UL 83</span>
                 </div>
                 <div class="product-card">
@@ -174,6 +254,32 @@
         </div>
     </section>
 
+    <section id="certificates" style="background: #f8fafc;">
+        <div class="container">
+            <h2>Certifications &amp; Test Reports</h2>
+            <p style="color: #64748b; max-width: 720px; margin-bottom: 32px;">Our cables hold international product certifications from SAA Approvals, TÜV Rheinland and TÜV SÜD, covering AS/NZS, BS, EN and IEC standards — including photovoltaic and EV-charging cable ranges. View and download the certificates.</p>
+            <div class="cert-strip">
+                <a class="cert-mini" href="certificates.html" style="text-decoration:none; color:inherit;">
+                    <div class="badge">SAA</div>
+                    <div><h3>SAA Approvals</h3><p>AS/NZS 5000.1 / 5000.2 · Australia &amp; NZ</p></div>
+                </a>
+                <a class="cert-mini" href="certificates.html" style="text-decoration:none; color:inherit;">
+                    <div class="badge">TÜV<br>Rheinland</div>
+                    <div><h3>TÜV Rheinland Certified</h3><p>BS / EN / IEC standards · 13 certificates</p></div>
+                </a>
+                <a class="cert-mini" href="certificates.html" style="text-decoration:none; color:inherit;">
+                    <div class="badge">TÜV<br>SÜD</div>
+                    <div><h3>TÜV SÜD Certified</h3><p>Photovoltaic cables · valid to 2028</p></div>
+                </a>
+                <a class="cert-mini" href="certificates.html" style="text-decoration:none; color:inherit;">
+                    <div class="badge">EV<br>Cable</div>
+                    <div><h3>EV Charging Cables</h3><p>EN 50620 / IEC 62893-3 certified</p></div>
+                </a>
+            </div>
+            <a href="certificates.html" class="btn btn-primary">View All Certificates →</a>
+        </div>
+    </section>
+
     <section id="contact">
         <div class="container">
             <h2>Contact Us</h2>
@@ -182,7 +288,7 @@
                     <h3>Sales Manager</h3>
                     <div class="contact-item"><div class="label">Name</div><div class="value">Wang Siyuan (William)</div></div>
                     <div class="contact-item"><div class="label">Mobile / WhatsApp</div><div class="value">+86 158 0000 3631</div></div>
-                    <div class="contact-item"><div class="label">Email</div><div class="value">king9wsy@gmail.com wangsy@gzdlc.com.cn</div></div>
+                    <div class="contact-item"><div class="label">Email</div><div class="value"><a href="mailto:wangsy@gzdlc.com.cn">wangsy@gzdlc.com.cn</a><br><a href="mailto:king9wsy@gmail.com">king9wsy@gmail.com</a></div></div>
                     <div class="contact-item"><div class="label">WeChat</div><div class="value">king-wsy</div></div>
                 </div>
                 <div class="address-card">
@@ -202,10 +308,12 @@
     </section>
 
     <footer>
-        <div class="container">
-            <p>© 2026 Guangzhou Cable Co., Ltd. All Rights Reserved.</p>
-            <p style="margin-top: 8px;">A subsidiary of Guangzhou Industrial Investment Holdings Group (GIIHG)</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="certificates.html">Certificates</a>
+            <a href="#contact">Contact</a>
         </div>
+        <p>© 2024 Guangzhou Cable Co., Ltd. All rights reserved.</p>
     </footer>
 
 </body>
