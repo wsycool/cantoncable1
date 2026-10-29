@@ -52,6 +52,13 @@ footer{text-align:center;padding:28px;color:#94a3b8;font-size:0.875rem;border-to
 footer a{color:#64748b}
 @media(max-width:768px){.grid{grid-template-columns:1fr}.hero h1{font-size:1.75rem}.hero .yr{font-size:3rem}}
 </style>
+<!-- Event snippet: email click = 咨询报价 conversion -->
+<script>
+document.addEventListener('click', function(e) {
+  var a = e.target && e.target.closest ? e.target.closest('a[href^="mailto:"]') : null;
+  if (a && window.gtag) { gtag('event', 'conversion', { 'send_to': 'AW-18543860921/EhiOCNn5-60dELm5s4pF' }); }
+}, true);
+</script>
 </head>
 <body>
 <nav class="nav"><div class="nav-inner">
