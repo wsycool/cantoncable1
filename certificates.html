@@ -81,6 +81,13 @@
             .nav-links.open { display: flex; }
         }
     </style>
+<!-- Event snippet: email click = 咨询报价 conversion -->
+<script>
+document.addEventListener('click', function(e) {
+  var a = e.target && e.target.closest ? e.target.closest('a[href^="mailto:"]') : null;
+  if (a && window.gtag) { gtag('event', 'conversion', { 'send_to': 'AW-18543860921/EhiOCNn5-60dELm5s4pF' }); }
+}, true);
+</script>
 </head>
 <body>
 
